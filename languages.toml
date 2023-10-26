@@ -1,0 +1,80 @@
+# -------------cpp---------------
+[[language]]
+name = "cpp"
+# indent = { tab-width = 4, unit = "    " }
+diagnostic-severity = "Warning"
+language-server = { command = "clangd" }
+
+# [language.debugger]
+# command = "codelldb"
+# name = "codelldb"
+# port-arg = "--port {}"
+# transport = "tcp"
+
+# [[language.debugger.templates]]
+# name = "binary"
+# request = "launch"
+# [[language.debugger.templates.completion]]
+# completion = "filename"
+# name = "binary"
+
+# [language.debugger.templates.args]
+# program = "{0}"
+# runInTerminal = true
+
+#----------------python------------------
+[[language]]
+name = "python"
+diagnostic-severity = "Warning"
+language-server = { command = "pylsp" }
+# formatter = { command = "black", args = ["--quiet", "-"] }
+
+#---------------rust--------------------
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+# [language.debugger]
+# command = "codelldb"
+# name = "codelldb"
+# port-arg = "--port {}"
+# transport = "tcp"
+
+# [[language.debugger.templates]]
+# name = "binary"
+# request = "launch"
+# [[language.debugger.templates.completion]]
+# completion = "filename"
+# name = "binary"
+
+# [language.debugger.templates.args]
+# program = "{0}"
+# runInTerminal = true
+
+#-----------------------toml--------------------------
+# [[language]]
+# name = "toml"
+# formatter = { command = "taplo", args = ["fmt", "-"] }
+
+
+# [[language]]
+# name = "lua"
+# indent = { tab-width = 4, unit = "    " }
+# grammar = "lua"
+# diagnostic-severity = "Warning"
+# language-server = { command = "lua-language-server" }
+
+# [[language]]
+# name = "html"
+# scope = "text.html.basic"
+# injection-regex = "html"
+# file-types = ["html"]
+# roots = []
+# language-server = { command = "vscode-html-language-server", args = [
+# "--stdio",
+# ] }
+# auto-format = true
+# config = { "provideFormatter" = true }
+# indent = { tab-width = 4, unit = "    " }

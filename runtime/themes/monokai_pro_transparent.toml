@@ -1,0 +1,105 @@
+# Author: GreasySlug <9619abgoni@gmail.com>
+# This theme is base on base16_theme(Author: NNB <nnbnh@protonmail.com>)
+
+"ui.background" = { fg = "white" }
+"ui.background.separator" = { fg = "gray" }
+"ui.text" = { fg = "light-gray" }
+"ui.text.focus" = { fg = "white" }
+"ui.menu" = { fg = "white" }
+"ui.menu.selected" = { modifiers = ["reversed"] }
+"ui.menu.scroll" = { fg = "light-gray" }
+"ui.linenr" = { fg = "light-gray" }
+"ui.linenr.selected" = { fg = "white", modifiers = ["bold"] }
+"ui.popup" = { fg = "white" }
+"ui.window" = { fg = "gray" }
+"ui.selection" = { bg = "gray" }
+"comment" = { fg = "light-gray", modifiers = ["italic"] }
+"ui.statusline" = { fg = "white" }
+"ui.statusline.inactive" = { fg = "gray" }
+"ui.statusline.normal" = { fg = "black", bg = "blue" }
+"ui.statusline.insert" = { fg = "black", bg = "green" }
+"ui.statusline.select" = { fg = "black", bg = "magenta" }
+"ui.help" = { fg = "light-gray" }
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "light-yellow", underline = { color = "light-yellow", style = "line" } }
+"ui.cursor.primary" = { modifiers = ["reversed", "slow_blink"] }
+"ui.cursor.secondary" = { modifiers = ["reversed"] }
+"ui.virtual.ruler" = { bg = "gray" }
+"ui.virtual.whitespace" = "gray"
+"ui.virtual.indent-guide" = "gray"
+"ui.virtual.inlay-hint" = { fg = "white", bg = "gray" }
+"ui.virtual.inlay-hint.parameter" = { fg = "white", bg = "gray" }
+"ui.virtual.inlay-hint.type" = { fg = "white", bg = "gray" }
+"ui.virtual.wrap" = "gray"
+
+"attribute" = "blue"
+"variable" = "base8"
+"constant" = "orange"
+"variable.builtin" = "red"
+"constant.builtin" = "red"
+"namespace" = "base8"
+"punctuation" = "base6"
+"type" = "green"
+"type.builtin" = { fg = "red" }
+"label" = "base8"
+"constructor" = "blue"
+"function" = "green"
+"function.macro" = { fg = "blue" }
+"function.builtin" = { fg = "cyan" }
+"operator" = "red"
+"variable.other.member" = "base8"
+"keyword" = { fg = "red" }
+"keyword.directive" = "blue"
+"variable.parameter" = "#f59762"
+"special" = "#f59762"
+"module" = "#f59762"
+"constant.character.escape" = { fg = "base8" }
+"string" = "yellow"
+"constant.numeric" = "purple"
+
+
+"markup.heading" = "light-blue"
+"markup.list" = "light-red"
+"markup.bold" = { fg = "light-yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "light-magenta", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "yellow", underline = { color = "yellow", style = "line" } }
+"markup.link.text" = "light-red"
+"markup.quote" = "light-cyan"
+"markup.raw" = "green"
+"markup.normal" = { fg = "blue" }
+"markup.insert" = { fg = "green" }
+"markup.select" = { fg = "magenta" }
+
+"diff.plus" = "light-green"
+"diff.delta" = "light-blue"
+"diff.delta.moved" = "blue"
+"diff.minus" = "light-red"
+
+"ui.gutter" = "gray"
+"info" = "light-blue"
+"hint" = "light-gray"
+"debug" = "light-gray"
+"warning" = "light-yellow"
+"error" = "light-red"
+
+"diagnostic.info" = { underline = { color = "light-blue", style = "dotted" } }
+"diagnostic.hint" = { underline = { color = "light-gray", style = "double_line" } }
+"diagnostic.debug" = { underline = { color = "light-gray", style = "dashed" } }
+"diagnostic.warning" = { underline = { color = "light-yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "light-red", style = "curl" } }
+
+[palette]
+# primary colors
+"red" = "#ff6188"
+"orange" = "#fc9867"
+"yellow" = "#ffd866"
+"green" = "#a9dc76"
+"blue" = "#78dce8"
+"purple" = "#ab9df2"
+# base colors, sorted from darkest to lightest
+
+"base6" = "#c1c0c0"
+"base8" = "#fcfcfa"
+# variants (for when transparency isn't supported)
+"base8x0c" = "#363337" # using base2 as bg

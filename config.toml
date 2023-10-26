@@ -1,0 +1,79 @@
+# theme = "gruvbox_transparent"
+
+
+[editor]
+color-modes = true
+cursorline = true
+cursorcolumn = false
+auto-info = true
+auto-completion = true
+true-color = true
+undercurl = true
+line-number = "absolute"
+mouse = true
+bufferline = "always"
+idle-timeout = 0
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+left = [
+    "mode",
+    "spacer",
+    "spinner",
+    "spacer",
+    "version-control",
+    "spacer",
+    "file-name",
+    "file-modification-indicator",
+
+]
+center = ["diagnostics", "workspace-diagnostics"]
+right = [
+    "selections",
+    "primary-selection-length",
+    "position",
+    "position-percentage",
+    "file-encoding",
+    "file-line-ending",
+    "file-type",
+]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.whitespace]
+render = "all"
+
+
+[editor.whitespace.characters]
+space = " "   # "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = " "
+
+[editor.indent-guides]
+render = true
+character = "┊" # Some characters that work well: "▏", "╎", "┆", "┊"
+skip-levels = 0
+
+[keys.normal]
+"A-k" = ["delete_selection", "move_line_up", "paste_before"]
+"A-j" = ["delete_selection", "paste_after"]
+"A-h" = ["goto_line_start"]
+"A-l" = ["goto_line_end"]
