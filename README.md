@@ -1,7 +1,7 @@
 # 我的helix设置
-## 我自己使用的helix的设置，附上几个透明的主题
+## 一、我自己使用的helix的设置，附上几个透明的主题
 直接使用版本为23.05，最近helix刚更新的23.10版本，因为`winget`和ubuntu未推送最新版本，我继续使用23.05
-## 在helix 23.10中使用
+## 二、在helix 23.10中使用
 **1、将`languages.toml`中的每一个`[[language]]`下的`language-server`更改为`language-servers`**
 
 **2、将`language-servers`后的参数修改为数组即可**
