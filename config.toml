@@ -21,7 +21,7 @@ auto-info = true
 auto-completion = true
 true-color = true
 undercurl = true
-line-number = "absolute"
+line-number = "relative"
 mouse = true
 bufferline = "always"
 idle-timeout = 0
@@ -74,11 +74,24 @@ render = true
 character = "┊" # Some characters that work well: "▏", "╎", "┆", "┊"
 skip-levels = 0
 
-[editor.smart-tab]
-enable = true
 
-[keys.normal]
-"A-k" = ["delete_selection", "move_line_up", "paste_before"]
-"A-j" = ["delete_selection", "paste_after"]
-"A-h" = ["goto_line_start"]
-"A-l" = ["goto_line_end"]
+[keys.insert]
+A-q = "normal_mode"
+C-h = "goto_line_start"
+C-l = "goto_line_end"
+A-j = "move_line_down"
+A-k = "move_line_up"
+A-h = "move_char_left"
+A-l = "move_char_right"
+A-w = "move_next_word_start"
+A-b = "move_prev_word_start"
+A-e = "move_next_word_end"
+A-a = "open_above"
+A-o = "open_below"
+A-p = "paste_after"
+A-u = "half_page_up"
+A-d = "half_page_down"
+A-x = "delete_char_backward"
+A-f = "delete_char_forward"
+C-x = "delete_word_backward"
+C-f = "delete_word_forward"
